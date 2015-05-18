@@ -9,6 +9,7 @@ require 'zipmark/pagination'
 require 'zipmark/resource'
 require 'zipmark/util'
 require 'zipmark/version'
+require 'zipmark/token'
 
 require 'zipmark/adapters/httpclient_adapter'
 

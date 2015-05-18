@@ -15,6 +15,7 @@ module Zipmark
 
       def initialize_client
         client = HTTPClient.new
+        client.ssl_config.ssl_version = :TLSv1
         client.set_auth(api_endpoint, username, password)
         return client
       end
