@@ -10,6 +10,10 @@ require 'zipmark/resource'
 require 'zipmark/util'
 require 'zipmark/version'
 require 'zipmark/token'
+require 'zipmark/display'
+require 'zipmark/display_proxy'
+require 'zipmark/workflow'
+require 'zipmark/workflow_proxy'
 
 require 'zipmark/adapters/httpclient_adapter'
 

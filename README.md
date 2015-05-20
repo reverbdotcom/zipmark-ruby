@@ -170,3 +170,18 @@ bundle install
 
 bundle exec rake spec
 ```
+
+
+#### Creating a Token
+
+For a Workflow
+```
+workflow = client.workflow.create(name: 'enrollment', data: { customer_id: 'some unique permanent id' })
+workflow.token
+```
+
+For a Display
+```
+display = client.display.create(name: 'recent-transaction', data: { customer_id: 'some unique permanet id' })
+display.token
+```

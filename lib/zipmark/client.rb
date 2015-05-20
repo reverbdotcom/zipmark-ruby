@@ -92,6 +92,14 @@ module Zipmark
       @resources[meth.to_s] || raise(NoMethodError, "No resource or method: '#{meth}'")
     end
 
+    def display
+      DisplayProxy.new(self)
+    end
+
+    def workflow
+      WorkflowProxy.new(self)
+    end
+
     private
     def load_resources
       hash = {}
